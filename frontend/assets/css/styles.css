@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Flex container para o body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Fazer o rodapé ir para o final da página */
+footer {
+    margin-top: auto; /* Empurra o rodapé para o final */
+}
+
+header {
+    position: relative; /* Necessário para posicionamento absoluto do botão */
+    display: flex; /* Usar Flexbox para controle do layout */
+    justify-content: center; /* Centraliza o conteúdo no eixo horizontal */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    padding: 0.5rem 1rem;
+}
+header h1 {
+    text-align: center; /* Centraliza o texto */
+    margin: 0;
+}
+
+/* Estilo para o botão de menu */
+.menu-btn {
+    position: absolute; /* Remove do fluxo normal do layout */
+    top: 50%; /* Alinha verticalmente com o header */
+    left: 1rem; /* Espaço à esquerda */
+    transform: translateY(-50%); /* Centraliza o botão verticalmente */
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para o menu lateral */
+.menu {
+    height: 30%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #292828;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
+.menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #f1f1f1;
+}
+
+.menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: rgb(184, 8, 8);
+}
+
+/* Estilo quando o menu está aberto */
+.menu-open {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Tornar o menu responsivo em telas pequenas */
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 100px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    width: 100%;
+}
