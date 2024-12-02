@@ -14,6 +14,7 @@ Diagrama de classes --> ![image](https://github.com/user-attachments/assets/445a
 
 - **Login de Usuário**: Os alunos e administradores podem acessar o sistema utilizando suas credenciais.
 - **Visualização de Eventos**: Os alunos podem visualizar os eventos disponíveis, se inscrever neles e avaliá-los.
+- **Administradores**: Administrador podem realizar o CRUD, podendo adicionar eventos, remover ou editar.
 - **Cadastro de Usuário**: Novos usuários podem ser cadastrados, com definição de papéis de `student` (aluno) ou `admin` (administrador).
 - **Feedback de Eventos**: Estudantes podem avaliar os eventos e deixar feedback.
 - **Sugestão de Novos Eventos**: Estudantes podem sugerir novos eventos para a instituição.
